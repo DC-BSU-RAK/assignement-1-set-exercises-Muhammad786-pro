@@ -1,0 +1,76 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', 'Segoe UI', sans-serif;
+    background-color: #f9f6f1;
+    color: #2f2f2f;
+    line-height: 1.8;
+}
+
+/* Main container */
+main {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings */
+h1 {
+    font-size: 2.8rem;
+    color: #4a3b2c;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+    color: #6b4f3b;
+    border-bottom: 1px solid #e0dcd6;
+    padding-bottom: 8px;
+}
+
+/* Description paragraph */
+.description {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #5a5a5a;
+    margin-bottom: 40px;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+/* List markers */
+ul li::marker {
+    color: #c4a484;
+}
+
+ol li::marker {
+    color: #b57e4c;
+}
+
+/* Responsive tweak */
+@media (max-width: 600px) {
+    main {
+        margin: 30px 20px;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

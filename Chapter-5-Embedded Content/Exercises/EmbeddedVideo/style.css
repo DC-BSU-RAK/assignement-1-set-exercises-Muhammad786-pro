@@ -1,0 +1,29 @@
+/* Center video horizontally & vertically with sexy vibes */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.video-container video {
+  width: 80%;
+  max-width: 720px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-container video:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 40px rgba(255, 111, 97, 0.4);
+}

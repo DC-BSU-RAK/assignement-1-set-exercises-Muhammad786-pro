@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>📘 Study Planner</h1>
+        <nav>
+            <ul>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#add-task">Add Task</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tasks" class="column">
+            <h2>My Tasks</h2>
+            <ul id="task-list">
+                <!-- Demo tasks -->
+                <li>Watch HTML tutorial <button onclick="removeTask(this)">✖</button></li>
+                <li>Practice Flexbox <button onclick="removeTask(this)">✖</button></li>
+                <li>Finish Chapter 3 <button onclick="removeTask(this)">✖</button></li>
+                <li>Review Notes <button onclick="removeTask(this)">✖</button></li>
+                <li>Mock Quiz <button onclick="removeTask(this)">✖</button></li>
+            </ul>
+        </section>
+
+        <section id="add-task" class="column">
+            <h2>Add New Task</h2>
+            <input type="text" id="new-task" placeholder="Enter your task" />
+            <button onclick="addTask()">Add Task</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Creative Computing - Study Planner</p>
+    </footer>
+
+    <script>
+        function addTask() {
+            const input = document.getElementById("new-task");
+            const taskText = input.value.trim();
+            if (taskText !== "") {
+                const li = document.createElement("li");
+                li.innerHTML = `${taskText} <button onclick="removeTask(this)">✖</button>`;
+                document.getElementById("task-list").appendChild(li);
+                input.value = "";
+            }
+        }
+
+        function removeTask(button) {
+            button.parentElement.remove();
+        }
+    </script>
+</body>
+
+</html>

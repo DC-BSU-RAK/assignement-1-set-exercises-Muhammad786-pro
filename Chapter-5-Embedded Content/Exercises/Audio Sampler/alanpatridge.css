@@ -1,0 +1,80 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-abstract-watercolor-background_361591-2731.jpg?semt=ais_hybrid&w=740'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Header Styling */
+header {
+  background: white;
+  padding: 10px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #abf2f5;
+  text-align: center;
+}
+
+/* Grid Layout for Soundboard */
+.soundboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Sound Sample Tiles */
+.sample {
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  height: 140px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+.sample:hover {
+  transform: scale(1.05);
+}
+
+/* Active / Playing Sample Styling */
+.sample:active,
+.sample.playing {
+  background-color: #abf2f5;
+  color: white;
+}
+
+/* Hide audio tag inside */
+.sample audio {
+  display: none;
+}

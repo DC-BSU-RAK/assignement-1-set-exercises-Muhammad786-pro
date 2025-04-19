@@ -1,0 +1,121 @@
+/* Styling body tag */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+/* Styling header tag section */
+header {
+    background-color: #17072b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling H1 tag in header */
+header h1 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 32px;
+}
+
+/* Styling nav tag */
+nav {
+    margin-top: 15px;
+}
+
+/* Styling navigation unordered list */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* Styling list */
+nav li {
+    display: inline;
+    margin: 0 20px;
+    font-size: 20pt;
+}
+
+/* Styling link tag */
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling main tag */
+main {
+    display: flex;
+    padding: 20px;
+}
+
+/* Styling welcome section */
+.welcome {
+    width: 65%;
+    margin-right: 20px;
+}
+
+.welcome h2 {
+    font-family: Tahoma, sans-serif;
+    text-decoration: underline;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    margin-bottom: 15px;
+}
+
+.welcome img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Styling lineup section */
+.lineup {
+    width: 30%;
+    background-color: #172d67;
+    color: white;
+    padding: 15px;
+}
+
+.lineup h2 {
+    font-family: Tahoma, sans-serif;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.lineup ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.lineup li {
+    margin-bottom: 5px;
+}
+
+/* Styling lineup images */
+.lineup-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.lineup-images img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Styling footer tag */
+footer {
+    background-color: #8c15e9;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    font-size: 20px;
+}

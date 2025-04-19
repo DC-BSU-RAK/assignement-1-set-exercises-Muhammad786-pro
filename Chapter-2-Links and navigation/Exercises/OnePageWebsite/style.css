@@ -1,0 +1,107 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #0022ff; /* deep red Spider-Man theme */
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='60'><text x='10' y='25' font-size='24'>🕷️</text><text x='70' y='25' font-size='24'>🕸️</text><text x='10' y='55' font-size='24'>🕷️</text><text x='70' y='55' font-size='24'>🕸️</text></svg>");
+  background-repeat: repeat;
+  background-size: 120px 60px;
+}
+
+    nav {
+      background-color: #ff0000;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 4px solid yellow;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration:solid;
+      font-weight: 600;
+      font-size: 1.1rem;
+      position: relative;
+    }
+
+    nav a.button {
+      background-color: #003087;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      border: 2px solid yellow;
+    }
+
+    nav a::after {
+      content: ' 🕸';
+    }
+
+    nav a.button::after {
+      content: none;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1,
+    h2 {
+      color: #000000;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3);
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    .trailer-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 25px;
+      height: 0;
+      overflow: hidden;
+      border: 4px solid yellow;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(255, 255, 255, 0.6);
+      margin: 40px 0;
+    }
+
+    .trailer-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
